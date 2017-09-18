@@ -7,3 +7,23 @@
 <thumbnail>http://www.tinglado.net/files/manuel/imagenes/Yodapng.png</thumbnail>
 <fanart>http://shop.rhodani.com/img/cms/tienda-bilbao-interior2.jpg</fanart>
 </item>
+
+<menu id="kodi.core.main">
+  <menu>
+    <label>My submenu</label>
+    <item library="contextitem1.py">
+      <label>Item 1</label>
+      <visible>true</visible>
+    </item>
+    <item library="contextitem2.py">
+      <label>Item 2</label>
+      <visible>true</visible>
+    </item>
+    <menu>
+      <label>Subsubmenu</label>
+      <item library="contextitem3.py">
+        <label>Item 3</label>
+        <visible>true</visible>
+      </item>
+    </menu>
+</menu>
