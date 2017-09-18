@@ -5,7 +5,7 @@
 <thumbnail></thumbnail>
 <fanart></fanart>
 <link>http://ignoreme</link>
-<externallink></externallink>
+<externallink>https://raw.githubusercontent.com/eladriandel99/Vise/master/TV.xml</externallink>
 </item>
  
 <item>
@@ -13,7 +13,7 @@
 <thumbnail></thumbnail>
 <fanart></fanart>
 <link>http://ignoreme</link>
-<externallink></externallink>
+<externallink>https://raw.githubusercontent.com/eladriandel99/Vise/master/Peliculas.xml</externallink>
 </item>
  
 <item>
@@ -21,6 +21,6 @@
 <thumbnail></thumbnail>
 <fanart></fanart>
 <link>http://ignoreme</link>
-<externallink></externallink>
+<externallink>https://raw.githubusercontent.com/eladriandel99/Vise/master/Series.xml</externallink>
 </item>
  
