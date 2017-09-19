@@ -105,6 +105,7 @@
 		<title>ARROW</title>
 		<link>$doregex[makelist]</link>
 		<regex>
+		<regex>
 			<name>makelist</name>
 			<listrepeat><![CDATA[
 			<title>[makelist.param3]</title>
@@ -127,6 +128,7 @@
 			<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
 			<page>http://diskokosmiko.mx/chicho306/arrow-t2-34037</page>
 			<cookieJar></cookieJar>
+		</regex>
 		</regex>
 		<regex>
 			<name>getUrl</name>
