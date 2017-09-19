@@ -113,7 +113,7 @@
 			<fanart>http://blogdesuperheroes.es/wp-content/plugins/BdSGallery/BdSGaleria/10758.jpg</fanart>
 			]]></listrepeat>
 			<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
-			<page>http://pelishdd.net/episodes/arrow-1x1/</page>
+			<page>http://pelishdd.net/tvshows/arrow/</page>
 			<cookieJar></cookieJar>
 		</regex>
 		<regex>
