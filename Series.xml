@@ -51,7 +51,7 @@
 			<fanart>http://blogdesuperheroes.es/wp-content/plugins/BdSGallery/BdSGaleria/10758.jpg</fanart>
 			]]></listrepeat>
 			<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
-			<page>http://seriesdanko.to/serie.php?serie=1051</page>
+			<page>http://tv-vip.com/section/arrow-temporada-1/</page>
 			<cookieJar></cookieJar>
 		</regex>
 		<regex>
