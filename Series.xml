@@ -127,6 +127,7 @@
 			]]></listrepeat>
 			<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
 			<page>http://diskokosmiko.mx/chicho306/arrow-t2-34037</page>
+			<page>http://diskokosmiko.mx/chicho306/arrow-t1-33998</page>
 			<cookieJar></cookieJar>
 		</regex>
 		</regex>
