@@ -113,7 +113,19 @@
 			<fanart>http://blogdesuperheroes.es/wp-content/plugins/BdSGallery/BdSGaleria/10758.jpg</fanart>
 			]]></listrepeat>
 			<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
-			<page>http://diskokosmiko.mx/monnet/arrow-1-temporada-serie-completada-29461/</page>
+			<page>http://diskokosmiko.mx/chicho306/arrow-t1-33998</page>
+			<cookieJar></cookieJar>
+		</regex>
+		<regex>
+			<name>makelist</name>
+			<listrepeat><![CDATA[
+			<title>[makelist.param3]</title>
+			<link>$doregex[getUrl]</link>
+			<thumbnail>http://blogdesuperheroes.es/wp-content/plugins/BdSGallery/BdSGaleria/10758.jpg</thumbnail>
+			<fanart>http://blogdesuperheroes.es/wp-content/plugins/BdSGallery/BdSGaleria/10758.jpg</fanart>
+			]]></listrepeat>
+			<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+			<page>http://diskokosmiko.mx/chicho306/arrow-t2-34037</page>
 			<cookieJar></cookieJar>
 		</regex>
 		<regex>
