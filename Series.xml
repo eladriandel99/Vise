@@ -301,7 +301,7 @@
 
 
 	<item>
-<title>Prueba Arrow6</title>
+<title>Prueba Arrow7</title>
 <link>$doregex[makelist2]</link>
 
 
@@ -313,7 +313,7 @@
 <thumbnail>[makelist2.param2]</thumbnail>
 <fanart>[makelist2.param2]</fanart>
 ]]></listrepeat>
-<expres>href="http://pelishdd.net/episodes/arrow-(.*?)"[\w\W\s]{0,71}episodios[\w\W\s]{0,5}</expres>
+<expres>href="http://pelishdd.net/episodes/arrow-(.*?)"</expres>
 <page>http://pelishdd.net/tvshows/arrow/</page>
 <referer></referer>
 <cookieJar></cookieJar>
