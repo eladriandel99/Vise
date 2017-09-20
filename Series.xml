@@ -512,7 +512,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart>[makelist2.param3]</fanart>
 ]]></listrepeat>
 <expres>class="image-block"\shref="(.*?)"\stitle="(.*?)"[\w\W\s]{0,9}src="(.*?)"</expres>
-<page>http://www.yaske.ro/es/peliculas/genero/premieres</page>
+<page>http://peliculas.yaske.ro/premiere/</page>
 <agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
 <cookieJar>$doregex[createCFCookie]</cookieJar>
 </regex>
