@@ -497,122 +497,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <referer>http://streamin.to</referer>
 </regex>  
 <thumbnail></thumbnail>
-</item>-->
- 
-
-<item>
-<title>[ [COLOR blue]YAN[/COLOR][COLOR yellow]KIE[/COLOR][COLOR red]FLIX[/COLOR]  ][COLOR orange] Estrenos[/COLOR]</title>
-<link>$doregex[makelist3]</link>
- <regex>
-<name>makelist3</name>
-<listrepeat><![CDATA[
-<title>[ [COLOR blue]YAN[/COLOR][COLOR yellow]KIE[/COLOR][COLOR red]FLIX[/COLOR]  ][COLOR orange] [makelist3.param2][/COLOR]</title>
-<link>$doregex[makelist2]</link>
-<thumbnail></thumbnail>
-<fanart></fanart>
-]]></listrepeat>
-<expres><![CDATA[estrenos:"(.*?)" name:"(.*?)";]]></expres>
-<page>https://raw.githubusercontent.com/Carlesto/Peliculas/master/peliculas.txt</page>
-</regex>
- 
- <regex>
-<name>makelist2</name>
-<listrepeat><![CDATA[
-<title>[[COLOR blue]YAN[/COLOR][COLOR yellow]KIE[/COLOR][COLOR red]FLIX[/COLOR] ][COLOR orange] [makelist2.param2] [/COLOR]</title>
-<link>$doregex[makelist]</link>
-<thumbnail>[makelist2.param1]</thumbnail>
-<fanart>[makelist2.param1]</fanart>
-]]></listrepeat>
-<expres><![CDATA[src="(.*?)".*cula(.*?)"[\w\W\s]{0,25}href="(.*?)"]]></expres>
-<page>[makelist3.param1]</page>
-</regex>
- <regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
- <title>[ [COLOR blue]YAN[/COLOR][COLOR yellow]KIE[/COLOR][COLOR red]FLIX[/COLOR] ] [makelist2.param2] - [COLOR cyan] Calidad: [/COLOR][COLOR red][makelist.param2][/COLOR]</title>
-<link>$doregex[getpage]</link>
-<regex>
-<name>getpage</name>
-<expres>$pyFunction:'$doregex[get_xpage]'.replace('\/','/')</expres>
-<page></page>
-</regex>
- <regex>
-<name>get_xpage</name>
-<expres>"file":"(.*?)"</expres>
-<page>$doregex[getmovie]</page>
-</regex>
- <regex>
-<name>getmovie</name>
-<expres>iframe src="(.*?)\&</expres>
-<page>http://ver-peliculas.org/core/node/[makelist.param1].html</page>
-</regex>
-<thumbnail>[makelist2.param1]</thumbnail>
-<fanart>[makelist2.param1]</fanart>
-]]></listrepeat>
-<expres><![CDATA[episode-id="(.*?)".*>(.*?)<]]></expres>
-<page>[makelist2.param3]</page>
-</regex>
-<thumbnail></thumbnail>
-<fanart></fanart>
 </item>
- 
-<item>
-<title>[ [COLOR blue]YAN[/COLOR][COLOR yellow]KIE[/COLOR][COLOR red]FLIX[/COLOR]  ][COLOR orange] Españolas[/COLOR]</title>
-<link>$doregex[makelist3]</link>
- <regex>
-<name>makelist3</name>
-<listrepeat><![CDATA[
-<title>[ [COLOR blue]YAN[/COLOR][COLOR yellow]KIE[/COLOR][COLOR red]FLIX[/COLOR]  ][COLOR orange] [makelist3.param2][/COLOR]</title>
-<link>$doregex[makelist2]</link>
-<thumbnail></thumbnail>
-<fanart></fanart>
-]]></listrepeat>
-<expres><![CDATA[espa:"(.*?)" name:"(.*?)";]]></expres>
-<page>https://raw.githubusercontent.com/Carlesto/Peliculas/master/peliculas.txt</page>
-</regex>
- 
- <regex>
-<name>makelist2</name>
-<listrepeat><![CDATA[
-<title>[ [COLOR blue]YAN[/COLOR][COLOR yellow]KIE[/COLOR][COLOR red]FLIX[/COLOR]  ][COLOR orange] [makelist2.param2] [/COLOR]</title>
-<link>$doregex[makelist]</link>
-<thumbnail>[makelist2.param1]</thumbnail>
-<fanart>[makelist2.param1]</fanart>
-]]></listrepeat>
-<expres><![CDATA[src="(.*?)".*cula(.*?)"[\w\W\s]{0,25}href="(.*?)"]]></expres>
-<page>[makelist3.param1]</page>
-</regex>
- <regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
- <title>[ [COLOR blue]YAN[/COLOR][COLOR yellow]KIE[/COLOR][COLOR red]FLIX[/COLOR]  ] [makelist2.param2] - [COLOR cyan] Calidad: [/COLOR][COLOR red][makelist.param2][/COLOR]</title>
-<link>$doregex[getpage]</link>
-<regex>
-<name>getpage</name>
-<expres>$pyFunction:'$doregex[get_xpage]'.replace('\/','/')</expres>
-<page></page>
-</regex>
- <regex>
-<name>get_xpage</name>
-<expres>"file":"(.*?)"</expres>
-<page>$doregex[getmovie]</page>
-</regex>
- <regex>
-<name>getmovie</name>
-<expres>iframe src="(.*?)\&</expres>
-<page>http://ver-peliculas.org/core/node/[makelist.param1].html</page>
-</regex>
-<thumbnail>[makelist2.param1]</thumbnail>
-<fanart>[makelist2.param1]</fanart>
-]]></listrepeat>
-<expres><![CDATA[episode-id="(.*?)".*>(.*?)<]]></expres>
-<page>[makelist2.param3]</page>
-</regex>
-<thumbnail></thumbnail>
-<fanart></fanart>
-</item> -->
- 
-
+  
 <item>
 <title>[ [COLOR blue]YAN[/COLOR][COLOR yellow]KIE[/COLOR][COLOR red]FLIX[/COLOR] ][COLOR orange] Estrenos[/COLOR]</title>
 <link>$doregex[makelist2]</link>
@@ -669,7 +555,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
         <page>$pyFunction:cloudflare.createCookie('http://www.yaske.ro',Cookie_Jar,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')</page>
         <cookieJar></cookieJar>
 </regex>
-</item>-->
+</item>
  
  
  
