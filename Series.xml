@@ -499,7 +499,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail></thumbnail>
 </item>-->
  
-<!--
+
 <item>
 <title>[ [COLOR blue]YAN[/COLOR][COLOR yellow]KIE[/COLOR][COLOR red]FLIX[/COLOR]  ][COLOR orange] Estrenos[/COLOR]</title>
 <link>$doregex[makelist3]</link>
@@ -612,7 +612,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart></fanart>
 </item> -->
  
-<!--
+
 <item>
 <title>[ [COLOR blue]YAN[/COLOR][COLOR yellow]KIE[/COLOR][COLOR red]FLIX[/COLOR] ][COLOR orange] Estrenos[/COLOR]</title>
 <link>$doregex[makelist2]</link>
@@ -765,7 +765,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart></fanart>
 </item>
  
-<!--
+
 <item>
 <title>[COLOR blue]YAN[/COLOR][COLOR yellow]KIE[/COLOR][COLOR red]FLIX[/COLOR]  ** [COLOR orange]Estrenos[/COLOR] **</title>
 <link>$doregex[makelist2]</link>
