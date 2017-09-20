@@ -301,7 +301,7 @@
 
 
 	<item>
-<title>Prueba Arrow</title>
+<title>Prueba Arrow2</title>
 <link>$doregex[makelist2]</link>
 
 
@@ -314,7 +314,7 @@
 <fanart>[makelist2.param2]</fanart>
 ]]></listrepeat>
 <expres>href="http://hdfull.tv/serie/(.*?)"[\w\W\s]{0,71}spec-border[\w\W\s]{0,5}src="(.*?)"[\w\W\s]{0,2}alt="(.*?)"</expres>
-<page>http://hdfull.tv/episodios#latest</page>
+<page>http://hdfull.tv/episodios</page>
 <referer></referer>
 <cookieJar></cookieJar>
 </regex>
