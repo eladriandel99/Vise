@@ -313,7 +313,6 @@
 <thumbnail>[makelist2.param2]</thumbnail>
 <fanart>[makelist2.param2]</fanart>
 ]]></listrepeat>
-<expres>href="http://hdfull.tv/pelicula/(.*?)"[\w\W\s]{0,71}spec-border[\w\W\s]{0,5}src="(.*?)"[\w\W\s]{0,2}alt="(.*?)"</expres>
 <page>http://hdfull.tv/peliculas-estreno</page>
 <referer></referer>
 <cookieJar></cookieJar>
