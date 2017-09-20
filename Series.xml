@@ -896,7 +896,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
   <regex> <name>makelist</name> <listrepeat><![CDATA[ <title>[COLOR white] [makelist.param3][/COLOR] </t itle> <link>$doregex[ getUrl]</link> <thumbnail>< /thumbnail> <fanart></fanar t> ]]></listrepeat> <expres><![CDATA[href="\/.*,(. *?),list.*\n.*\n.*\n.*href="\/ ([^"]*)".*?>(.*?)<]]></expres> <page>http://diskokosmiko.mx /naredo/duck-dodgers-serie-ani mada-68179/list,1,2</page> <c></c>ookieJar></cookieJar> 
   </regex > 
   <regex> <name>getUrl</name > <expres>DownloadUrl":"([^"] +)<expres> <page>http://disko kosmiko.mx/action/DownloadFile ?location=fi&f=[makelist.p aram1]</page> <rawpost>fileId =[makelist.param1]&__Reque stVerificationToken=$doregex[t ok]</rawpost> <referer>http:/ /diskokosmiko.mx/[makelist.par am2]</referer> <connection>ke ep-alive</connection> <accept >*/*</accept> <X-Req>XMLHttpR equest</X-Req> <cookieJar></cookieJar> </regex> 
-  <regex> <name>tok</name> <expres>Down loadFile.*RequestVerificationT oken.*?value="([^"]+)<expres> <page>http://diskokosmiko.mx/ [makelist.param2]</page> <ref erer>http://diskokosmiko.mx/tr ivianita/peliculas-de-aventura s-el-rockero-30698/list,1,3</referer> <connection>keep-aliv e</connection> <cookieJar></c ookieJar> 
+  <regex> <name>tok</name> <expres>Down loadFile.*RequestVerificationT oken.*?value="([^"]+)<expres> <page>http://diskokosmiko.mx/ [makelist.param2]</page> <referer>http://diskokosmiko.mx/tr ivianita/peliculas-de-aventura s-el-rockero-30698/list,1,3</referer> <connection>keep-aliv e</connection> <cookieJar></cookieJar> 
   </regex> 
   <thumbnail></thumbnail> <fanart></fanart> </item> 
   <item> 
@@ -907,3 +907,79 @@ def GetLSProData(page_data,Cookie_Jar,m):
   <expres><![CDATA[href="\/.*,(.*?), list.*\n.*\n.*\n.*href="\/([^" ]*)".*?>(.*?)<]]></expres> 
   <page>http://diskokosmiko.mx/nar edo/los-impossibles-serie-anim ada-69073/list,1,2</page> 
   <cookieJar></cookieJar> </regex> <regex> <name>getUrl</name> <expres>DownloadUrl":"([^"]+ )<expres> <page>http://diskok osmiko.mx/action/DownloadFile? location=fi&f=[makelist.pa ram1]</page> <rawpost>fileId= [makelist.param1]&__Reques tVerificationToken=$doregex[to k]</rawpost> <referer>http:// diskokosmiko.mx/[makelist.para m2]</referer> <connection>kee p-alive</connection> <accept> */*</accept> <X-Req>XMLHttpRe quest</X-Req> <cookieJar></cookieJar> </regex> <regex> <name>tok</name> <expres>Downl oadFile.*RequestVerificationTo ken.*?value="([^"]+)<expres> <page>http://diskokosmiko.mx/[ makelist.param2]</page> <referer>http://diskokosmiko.mx/tri vianita/peliculas-de-aventuras -el-rockero-30698/list,1,3</referer> <connection>keep-alive </connection> <cookieJar></cookieJar> </regex> <thumbnail ></thumbnail> <fanart></fanart> </item> <item>
+
+  
+  
+  
+  <item>
+<title>[color orange]Series Pelispedia[/color]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+       <title>[color=undefined][makelist.param2][/color]</title>
+       <link>$doregex[makelist2]</link>
+       <thumbnail>[makelist.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[\<a href\="(.*?)" alt\="(.*?)<[\w\W\s]{0,190}(http.*?)"]]></expres>
+<page>http://www.pelispedia.tv/series/all/</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[color orange][makelist2.param2][/color]</title>
+<link>$doregex[makelist3]</link>
+<thumbnail></thumbnail>
+]]></listrepeat>
+<expres><![CDATA[\<a href\="(.*?)"[\w\W\s]{0,790}<small>(.*?)<]]></expres>
+<page>[makelist.param1]</page>
+<referer>[makelist.param1]</referer>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[color orange][makelist3.param2][/color]</title>
+<link>$doregex[getUrl]</link>
+<thumbnail></thumbnail>
+]]></listrepeat>
+<expres><![CDATA[<a href="(.*?)"[\w\W\s]{0,190}class="text">(.*?)<]]></expres>
+<page>$doregex[page]</page>
+<referer>[makelist2.param1]</referer>
+<cookieJar></cookieJar>
+</regex>
+
+
+<regex>
+<name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+
+import requests, re
+link = '[makelist3.param1]'
+headers = {'User-Agent': 'Mozilla/5.0 (X11 Linux i686 rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': '$doregex[page]'}
+source = requests.get(link, headers = headers).text
+select = re.findall('<video x-webkit-airplay="allow" webkit-playsinline="" src="(.*?)"', source)
+url = select.replace('amp;', '')
+return url
+]]></expres>
+<page></page>
+<referer></referer>
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36</agent>
+<cookieJar></cookieJar>
+</regex
+
+<regex>
+<name>page</name>
+<expres><![CDATA[<iframe src="(.*?)" marginheight]]></expres>
+<page>[makelist2.param1]</page>
+<referer>[makelist2.param1]</referer>
+<cookieJar></cookieJar>
+</regex>
+
+</item>
+
