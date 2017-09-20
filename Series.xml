@@ -499,66 +499,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail></thumbnail>
 </item>
   
-<item>
-<title>[ [COLOR blue]YAN[/COLOR][COLOR yellow]KIE[/COLOR][COLOR red]FLIX[/COLOR] ][COLOR orange] Estrenos2[/COLOR]</title>
-<link>$doregex[makelist2]</link>
- 
-<regex>
-<name>makelist2</name>
-<listrepeat><![CDATA[
-<title>[ [COLOR blue]YAN[/COLOR][COLOR yellow]KIE[/COLOR][COLOR red]FLIX[/COLOR]  ][COLOR orange] [makelist2.param2][/COLOR]</title>
-<link>$doregex[makelist]</link>
-<thumbnail>[makelist2.param3]</thumbnail>
-<fanart>[makelist2.param3]</fanart>
-]]></listrepeat>
-<expres>class="image-block"\shref="(.*?)"\stitle="(.*?)"[\w\W\s]{0,9}src="(.*?)"</expres>
-<page>http://peliculas.yaske.ro/premiere/</page>
-<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
-<cookieJar>$doregex[createCFCookie]</cookieJar>
-</regex>
-<regex>
-        <name>createCFCookie</name>
-        <expres></expres>
-        <page>$pyFunction:cloudflare.createCookie('http://www.yaske.ro',Cookie_Jar,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')</page>
-        <cookieJar></cookieJar>
-</regex>
- 
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-<title>[ [COLOR blue]YAN[/COLOR][COLOR yellow]KIE[/COLOR][COLOR red]FLIX[/COLOR]  ][COLOR red][makelist2.param2] [/COLOR] [COLOR gold]Idioma ([makelist.param2]) - Calidad [makelist.param3][/COLOR]</title>
-<link>$doregex[url]/$doregex[id2]/v.flv</link>
-<regex>
-<name>url</name>
-<expres>vplayer[\w\W\s]{0,8}src="(.*?)\/i</expres>
-<page>http://streamin.to/embed-[makelist.param1]-740x360.html</page>     
-<referer>http://streamin.to</referer>
-</regex>
-<regex>
-<name>id2</name>
-<expres>mp4\|(.*?)\|file</expres>
-<page>http://streamin.to/embed-[makelist.param1]-740x360.html</page>     
-<referer>http://streamin.to</referer>
-</regex>
- 
-<thumbnail>[makelist2.param3]</thumbnail>
-<fanart>[makelist2.param3]</fanart>
-]]></listrepeat>
-<expres>streamin.to%2F(.*?)%3F[\w\W\s]{0,260}flags/(.*?)_[\w\W\s]{0,190}title="(.*?)\(</expres>
-<page>[makelist2.param1]</page>
-<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
-<cookieJar>$doregex[createCFCookie]</cookieJar>
-</regex>
-<regex>
-        <name>createCFCookie</name>
-        <expres></expres>
-        <page>$pyFunction:cloudflare.createCookie('http://www.yaske.ro',Cookie_Jar,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')</page>
-        <cookieJar></cookieJar>
-</regex>
-</item>
- 
- 
- 
+
 <item>
 <title>[ [COLOR blue]YAN[/COLOR][COLOR yellow]KIE[/COLOR][COLOR red]FLIX[/COLOR]  ][COLOR orange]Generos[/COLOR]</title>
 <link>$doregex[makelist2]</link>
@@ -569,7 +510,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[makelist0]</link>
 ]]></listrepeat>
 <expres><![CDATA[href="(.*?)"[\w\W\s]{0,40}btn-bordered[\w\W\s]{0,11}">(.*?)<]]></expres>
-<page>http://lacajita.xyz/listado/</page>
+<page>https://lacajita.xyz/estrenos-dvd/es/</page>
 </regex>
 <regex>
 <name>makelist0</name>
