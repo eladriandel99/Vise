@@ -301,7 +301,7 @@
 
 
 	<item>
-<title>Prueba Arrow1</title>
+<title>Prueba Arrow</title>
 <link>$doregex[makelist2]</link>
 
 
@@ -313,7 +313,7 @@
 <thumbnail>[makelist2.param2]</thumbnail>
 <fanart>[makelist2.param2]</fanart>
 ]]></listrepeat>
-<expres>href='/serie/1051/temporada-(.*?)'[\w\W\s]{0,2}itemprop='episodeNumber'>(.*?)</expres>
+<expres>href='/serie/1051/temporada-(.*?)'[\w\W\s]{0,9}itemprop='episodeNumber'>(.*?)</expres>
 <page>https://seriesblanco.com/serie/1051/arrow.html</page>
 <referer></referer>
 <cookieJar></cookieJar>
