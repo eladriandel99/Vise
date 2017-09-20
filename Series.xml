@@ -669,7 +669,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
         <page>$pyFunction:cloudflare.createCookie('http://hdfull.tv',Cookie_Jar,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')</page>
         <cookieJar></cookieJar>
 </regex>
-</regex>
  
  
  
@@ -963,33 +962,9 @@ return url
 															
 																
 																		
-																		<item>
-<title>               [B][COLOR yellow]C O R T E S I A[/COLOR][COLOR deepskyblue]   D.A.N.N.Y[/COLOR][COLOR red]   M.O.V.I.E.S.P.R.[/COLOR][/B] </title>
-<link>http://ignora.me</link>
-<externallink>http://no link</externallink>
-<thumbnail>http://i.imgur.com/OnB8r6U.png</thumbnail><fanart>https://kfiretv-cn396iwnnfhyi.netdna-ssl.com/wp-content/uploads/2017/04/kodi-17.1-on-firestick-1024x436.jpg</fanart>
-</item>
- <item>
-<title>            [B][COLOR yellow]NO TE OLVIDES DE[/COLOR][COLOR deepskyblue]   SUBSCRIBER[/COLOR][COLOR white]  A MI CANAL[/COLOR][/B] </title>
-<link>http://ignora.me</link>
-<externallink>http://frepo.org/stalker.m3u</externallink>
-<thumbnail>http://i.imgur.com/OnB8r6U.png</thumbnail><fanart></fanart>
-</item>
- <item>
-<title>                [B][COLOR red]http://[/COLOR][COLOR lime]www.youtube.com/dannymoviespr[/COLOR][COLOR white]  kodi[/COLOR][/B] </title>
-<link>http://ignora.me</link>
-<externallink>http://frepo.org/stalker.m3u</externallink>
-<thumbnail>http://i.imgur.com/OnB8r6U.png</thumbnail><fanart>https://kfiretv-cn396iwnnfhyi.netdna-ssl.com/wp-content/uploads/2017/04/kodi-17.1-on-firestick-1024x436.jpg</fanart>
-</item>
+
+
  
-<thumbnail>http://i.imgur.com/OnB8r6U.png</thumbnail><fanart>https://kfiretv-cn396iwnnfhyi.netdna-ssl.com/wp-content/uploads/2017/04/kodi-17.1-on-firestick-1024x436.jpg</fanart>
-<info></info></item>
-<item>
-<title>                                   [B][COLOR hotpink] LA SECCION LATINA CREDITOS A FREEWORLD[/COLOR][/B] </title>            
-<link>$doregex[makelist]</link>
- 
-<thumbnail>http://i.imgur.com/OnB8r6U.png</thumbnail><fanart>https://kfiretv-cn396iwnnfhyi.netdna-ssl.com/wp-content/uploads/2017/04/kodi-17.1-on-firestick-1024x436.jpg</fanart>
-<info></info></item>
 <item>
 <title>[COLOR white][B]________________________________________________________________________[/B][/COLOR]</title>          
 <link>$doregex[makelist]</link>
