@@ -194,7 +194,7 @@
 
 
 	<item>
-<title>Prueba Arrow7</title>
+<title>Prueba Arrow8</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
@@ -204,7 +204,7 @@
 			<thumbnail>http://blogdesuperheroes.es/wp-content/plugins/BdSGallery/BdSGaleria/10758.jpg</thumbnail>
 <fanart>http://blogdesuperheroes.es/wp-content/plugins/BdSGallery/BdSGaleria/10758.jpg</fanart>
 			]]></listrepeat>
-<expres><![CDATA[href="https://serieshd.me/capitulo/suits-la-clave-del-exito/(.*?)"><strong>(.*?)]]></expres>
+<expres><![CDATA[href="https://serieshd.me/capitulo/suits-la-clave-del-exito/(.*?)"><strong>(.*?)</strong>]]></expres>
 <page>https://serieshd.me/capitulos/suits-la-clave-del-exito/</page>
 <referer></referer>
 <cookieJar></cookieJar>
