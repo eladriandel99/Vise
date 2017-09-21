@@ -194,7 +194,7 @@
 
 
 	<item>
-<title>Prueba Arrow</title>
+<title>Prueba Arrow45</title>
 <link>$doregex[makelist2]</link>
 <regex>
 <name>makelist</name>
@@ -208,6 +208,7 @@
 <page>https://serieshd.me/capitulos/suits-la-clave-del-exito/</page>
 <referer></referer>
 <cookieJar></cookieJar>
+</item>
 
 
 
