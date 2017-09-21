@@ -194,8 +194,8 @@
 
 
 	<item>
-<title>Prueba Arrow45</title>
-<link>$doregex[makelist2]</link>
+<title>Prueba Arrow4</title>
+<link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
