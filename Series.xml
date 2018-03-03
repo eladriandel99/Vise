@@ -88,7 +88,7 @@
 	
 	
 	<item>
-		<title>ARROW</title>
+		<title>ARROWww</title>
 		<link>$doregex[makelist]</link>
 		<regex>
 			<name>makelist</name>
